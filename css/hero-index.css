@@ -1,0 +1,68 @@
+.hero {
+    margin-top: 100px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.55;
+
+    margin-top: 18px;
+}
+
+.hero-list {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    margin-top: 45px;
+}
+
+.hero-item {}
+
+.hero-btn-get {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+
+    width: 178px;
+    height: 53px;
+
+    border-radius: 4px;
+    background-color: #02897a;
+
+    transition: box-shadow 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.hero-btn-watch {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #02897a;
+
+    transition: color 250ms ease-in-out;
+}
+
+.hero-img {}
+
+.hero-btn-get:hover, .hero-btn-get:focus {
+    box-shadow: inset 0 0 4px 1px #000;
+    background-color: #02554b;
+}
+
+.hero-btn-watch:hover, .hero-btn-watch:focus {
+    color: #02554b;
+}
