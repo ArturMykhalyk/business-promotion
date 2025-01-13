@@ -1,6 +1,8 @@
 @import url(./reset.css);
 @import url(./header.css);
-
+@import url(./price-table.css);
+@import url(./promo.css);
+@import url(./footer.css);
 
 .container {
     margin: 0 auto;
@@ -13,6 +15,8 @@ body {
     font-weight: 400;
     color: #22343d;
 }
+
+
 
 /************* hero ************/
 
@@ -184,39 +188,37 @@ body {
 }
 
 /*************** management **********/
-.management {
+/***********customer support*************/
+/*************** collaborative **************/
+.management, .customer, .collaborative {
     padding-top: 100px;
 }
 
-.management-container {
+.management-container, .customer-container, .collaborative-container {
     display: flex;
     align-items: center;
     column-gap: 84px;
 }
 
-.management-title {
+.management-title, .customer-title, .collaborative-title {
     font-weight: 600;
     font-size: 16px;
 }
 
-.management-title span {
+.management-title span, .customer-title span, .collaborative-title span {
     display: block;
     font-weight: 700;
     font-size: 32px;
     margin-top: 8px;
 }
 
-.management-text {
+.management-text, .customer-text, .collaborative-text {
     font-size: 16px;
     line-height: 1.625;
     margin-top: 25px;
 }
 
-.management-list {}
-
-.management-item {}
-
-.management-item-subtitle {
+.management-item-subtitle, .collaborative-item-subtitle {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.625;
@@ -224,44 +226,18 @@ body {
     margin-top: 30px;
 }
 
-.management-item-text {
+.management-item-text, .customer-item-text, .collaborative-item-text {
     font-size: 16px;
     line-height: 1.625;
 
     margin-top: 12px;
 }
 
+.management-list {}
+
+.management-item {}
+
 /***********customer support*************/
-.customer {
-    padding-top: 100px;
-}
-
-.customer-container {
-    display: flex;
-    column-gap: 84px;
-    align-items: center;
-}
-
-.customer-img {}
-
-.customer-title {
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.customer-title span {
-    font-weight: 700;
-    font-size: 32px;
-
-    display: block;
-    margin-top: 8px;
-}
-
-.customer-text {
-    font-size: 16px;
-    line-height: 1.625;
-    margin-top: 25px;
-}
 
 .customer-list {
     display: flex;
@@ -305,7 +281,256 @@ body {
     fill: #ffffff;
 }
 
-.customer-item-text {
+
+/*************** collaborative **************/
+
+.collaborative-list {}
+
+.collaborative-item {}
+
+
+/*************** process **************/
+.process {
+    padding-top: 100px;
+
+}
+
+.process-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.process-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
+    text-align: center;
+    max-width: 542px;
+    margin-top: 25px;
+}
+
+.process-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 100px;
+    margin-top: 40px;
+    max-width: 916px;
+}
+
+.process-item {
+    display: flex;
+    column-gap: 19px;
+    align-items: center;
+    flex-basis: calc((100% - 100px) / 2);
+}
+
+.process-item-img {}
+
+.process-item-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2f281e;
+
+    width: 281px;
+    height: 50px;
+
+    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+    border-radius: 50px;
+}
+
+.process-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+
+    margin-top: 50px;
+
+    border-radius: 4px;
+    width: 216px;
+    height: 53px;
+    background-color: #02897a;
+
+    transition: background-color 250ms ease-in-out;
+}
+
+.process-btn:hover, .process-btn:focus {
+    background-color: #025e53;
+}
+
+
+/************strategies*************/
+
+.strategies {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.strategies-title {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.strategies-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    max-width: 465px;
+    margin-top: 10px;
+}
+
+.strategies-list {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 40px;
+}
+
+.strategies-item {
+    flex-basis: calc((100% - 60px) / 3);
+
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    padding-bottom: 40px;
+}
+
+.strategies-item-text {
+    font-size: 16px;
+    line-height: 1.75;
+
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.strategies-item-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.66667;
+
+    margin-top: 12px;
+    margin-left: 27px;
+    transition: color 250ms ease-in-out;
+}
+
+.strategies-item:hover>.strategies-item-subtitle {
+    color: #02897a;
+
+}
+
+.strategies-item:hover {
+    cursor: pointer;
+}
+
+
+/*************clients say*************/
+
+.clients-say {
+    padding-top: 100px;
+
+}
+
+.clients-say-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients-say-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.78125;
+    letter-spacing: 0.01em;
+}
+
+.clients-say-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    text-align: center;
+    max-width: 537px;
+    margin-top: 10px;
+}
+
+.clients-say-list {
+    display: flex;
+    column-gap: 64px;
+    margin-top: 40px;
+}
+
+.clients-say-item {
+
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 26px 28px;
+    flex-basis: calc((100% - 128px) / 3);
+}
+
+.star-list {
+    display: flex;
+    column-gap: 3px;
+}
+
+.star-item-icon {
+    fill: #f3cd03;
+}
+
+.clients-say-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    color: #737373;
+    margin-top: 16px;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-top: 16px;
+}
+
+.item-container-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-container-name-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #02897a;
+}
+
+.item-container-name-text {
+    font-weight: 500;
+
+    line-height: 1.71429;
+    letter-spacing: 0.01em;
+    color: #252b42;
+}
+
+/***************promo ***************/
+.promo {
+    padding-top: 100px;
+}
+
+/****************footer***************/
+.footer {
+    padding-top: 100px;
 }
