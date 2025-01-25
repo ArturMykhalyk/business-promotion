@@ -1,0 +1,265 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./promo.css);
+
+
+
+/***************promo ***************/
+.promo {
+    padding-top: 143px;
+    padding-bottom: 75px;
+}
+
+/****************footer***************/
+.footer {
+    padding-top: 75px;
+}
+
+
+/****************clients***************/
+.clients {
+    padding-top: 100px;
+    padding-bottom: 117px;
+}
+
+
+
+.clients-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+}
+
+/****************why-product***************/
+.why-product {
+    padding-top: 24px;
+    padding-bottom: 68px;
+    background-color: #f5f5f5;
+}
+
+
+
+.why-product-title {
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-product-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.why-product-item {
+    padding: 32px 38px 34px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-product-conteiner-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    margin-bottom: 32px;
+
+}
+
+.why-product-conteiner-icon.green {
+    background-color: #02897a;
+}
+
+.why-product-conteiner-icon.blue {
+    background: #4d8dff;
+}
+
+.why-product-conteiner-icon.red {
+    background: #f03e3d;
+}
+
+.why-product-icon {
+    fill: #ffffff;
+}
+
+.why-product-item-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.375;
+    letter-spacing: 0em;
+    margin-bottom: 16px;
+    text-wrap: nowrap;
+}
+
+.why-product-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6875;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+
+
+
+/****************how-product***************/
+
+.how-produst {
+    padding-top: 100px;
+    padding-bottom: 115px;
+}
+
+.how-produst-container {
+    padding: 0 62px;
+}
+
+
+.how-produst-title {
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+.how-produst-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+    margin-bottom: 77px;
+}
+
+.how-produst-item {
+    display: flex;
+    align-items: center;
+    gap: 89px;
+}
+
+.how-produst-item-img {}
+
+.how-produst-item-content {}
+
+.item-content-subtitle-accent {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.item-content-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.item-content-text {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.how-produst-btn {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #02897a;
+    padding: 11px 18px;
+    margin: 0 auto;
+    transition: background-color 250ms ease-in-out;
+
+    &:hover {
+        background-color: #03665a;
+    }
+}
+
+/****************.offers***************/
+.offers {
+    padding-top: 35px;
+    padding-bottom: 52px;
+    background-image: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+}
+
+.offers-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 93px;
+}
+
+.offers-list {
+    display: flex;
+    justify-content: center;
+    gap: 227px;
+
+}
+
+.offers-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers-item-icon-fon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 27px;
+}
+
+.offers-item-icon-fon.red {
+    background-color: #ffefef;
+}
+
+.offers-item-icon-fon.blue {
+    background-color: #f2f6ff;
+}
+
+.offers-item-subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16667;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.offers-item-list {
+    margin-bottom: 12px;
+}
+
+.offers-item-item {}
+
+.offers-item-item-text {
+    font-size: 18px;
+    line-height: 1.77778;
+    text-align: center;
+}
+
+.offers-item-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #000;
+}
